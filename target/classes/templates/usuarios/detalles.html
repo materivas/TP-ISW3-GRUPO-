@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/head :: commonHead('Usuarios Detalles')}"></head>
+
+<body>
+	<div th:replace="fragments/navbar :: navbar"></div>
+
+	<div>
+		<h2 th:text="${usuario.nombre} + ' ' + ${usuario.apellido}" /></h2>
+		<p>Email: <span th:text="${usuario.email}" /></p>
+		<p>Alta: <span th:text="${usuario.fechaAlta}" /></p>
+	</div>
+
+	<div th:replace="fragments/footer :: footer"></div>
+</body>
+
+</html>

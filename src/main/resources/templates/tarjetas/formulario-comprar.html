@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/head :: commonHead('Tarjetas Formulario Comprar')}"></head>
+
+<body>
+	<div th:replace="fragments/navbar :: navbar"></div>
+
+	<form th:action="@{/tarjetas/comprar-nueva}" th:object="${tarjetaFormComprarDTO}" method="post" class="tarjeta-form">
+
+		<div class="tarjeta-form__field">
+			<input type="text" th:field="*{telefono}" placeholder="Telefono" class="tarjeta-form__input" />
+		</div>
+
+		<div class="tarjeta-form__field">
+			<input type="email" th:field="*{correo}" placeholder="Correo electrónico" class="tarjeta-form__input" />
+		</div>
+
+		<div class="tarjeta-form__field">
+			<input type="email" th:field="*{repetirCorreo}" placeholder="Repetir correo" class="tarjeta-form__input" />
+		</div>
+		
+		<div class="tarjeta-form__field">
+			<input type="text" th:field="*{tipoDni}" placeholder="Tipo dni" class="tarjeta-form__input" />
+		</div>
+		
+		<div class="tarjeta-form__field">
+			<input type="text" th:field="*{dni}" placeholder="Dni" class="tarjeta-form__input" />
+		</div>
+		
+		<div class="tarjeta-form__field">
+			<input type="text" th:field="*{nombre}" placeholder="Nombre" class="tarjeta-form__input" />
+		</div>
+		
+		<div class="tarjeta-form__field">
+			<input type="text" th:field="*{apellido}" placeholder="Apellido" class="tarjeta-form__input" />
+		</div>
+		
+		<div class="tarjeta-form__field">
+			<input type="text" th:field="*{genero}" placeholder="Genero" class="tarjeta-form__input" />
+		</div>
+
+		<div class="tarjeta-form__actions">
+			<button type="submit" class="tarjeta-form__button">Guardar</button>
+		</div>
+	</form>
+
+	<div th:replace="fragments/contacto :: contacto"></div>
+
+	<div th:replace="fragments/footer :: footer"></div>
+</body>
+
+</html>

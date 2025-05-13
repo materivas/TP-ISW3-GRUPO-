@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/head :: commonHead('Iniciar Sesión')}"></head>
+
+<body>
+	<div th:replace="fragments/navbar :: navbar"></div>
+
+	<section th:fragment="sistemaSubeBanner" class="sistema-sube-banner">
+		<div class="sistema-sube-banner__container">
+			<h1 class="sistema-sube-banner__title">SUBE</h1>
+			<p class="sistema-sube-banner__subtitle">
+				Sistema de pagos para el transporte público de pasajeros.
+			</p>
+			<a th:href="@{/recargas/nueva}" class="sistema-sube-banner__cta">
+				Recargá tu tarjeta ahora
+			</a>
+		</div>
+	</section>
+
+	<section th:fragment="sistemaSubeLogos" class="sistema-sube-logos-banner">
+		<div class="sistema-sube-logos-banner__container">
+			<div class="sistema-sube-logos-banner__item">
+				<a href="/login">
+					<img src="/images/Ingresa a tu cuenta.png" alt="Ingresar a tu cuenta"
+						class="sistema-sube-logos-banner__icon" />
+				</a>
+				<span class="sistema-sube-logos-banner__label">Ingresar a tu cuenta</span>
+			</div>
+			<div class="sistema-sube-logos-banner__item">
+				<a href="/informacion/conseguila">
+					<img src="/images/Conseguila.png" alt="Conseguila" class="sistema-sube-logos-banner__icon" />
+				</a>
+				<span class="sistema-sube-logos-banner__label">Conseguila</span>
+			</div>
+			<div class="sistema-sube-logos-banner__item">
+				<a href="/tarjetas/nueva">
+					<img src="/images/Registrala.png" alt="Registrala" class="sistema-sube-logos-banner__icon" />
+				</a>
+				<span class="sistema-sube-logos-banner__label">Registrala</span>
+			</div>
+			<div class="sistema-sube-logos-banner__item">
+				<a href="/tarjetas/comprar-nueva">
+					<img src="/images/Comprala online.png" alt="Comprala Online"
+						class="sistema-sube-logos-banner__icon" />
+				</a>
+				<span class="sistema-sube-logos-banner__label">Comprala Online</span>
+			</div>
+			<div class="sistema-sube-logos-banner__item">
+				<a href="/tarjetas/buscar">
+					<img src="/images/Consulta titularidad.png" alt="Consulta Tu Utilidad"
+						class="sistema-sube-logos-banner__icon" />
+				</a>
+				<span class="sistema-sube-logos-banner__label">Consulta Tu Titularidad</span>
+			</div>
+		</div>
+	</section>
+
+	<section th:fragment="sistemaSubeEvolucionCard" class="sistema-sube-evolucion-card-wrapper">
+		<div class="sistema-sube-evolucion-card">
+			<img src="/images/tarjeta.png" alt="Logo Tarjeta" class="sistema-sube-evolucion-card__logo" />
+			<div class="sistema-sube-evolucion-card__content">
+				<h2 class="sistema-sube-evolucion-card__title">SUBE evoluciona: sumamos nuevos medios de pago</h2>
+				<p class="sistema-sube-evolucion-card__text">
+					Ahora pagá el colectivo como quieras en varias ciudades del país.<br /><br />
+					Con tus tarjetas de crédito, débito o prepagas sin contacto y desde celulares o relojes con NFC.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section th:fragment="sistemaSubeServicios" class="sistema-sube-servicios">
+		<h2 class="sistema-sube-servicios__heading">Servicios</h2>
+		<div class="sistema-sube-servicios__grid">
+			<a class="sistema-sube-servicios__card">
+				<img src="/images/Tarifas sociales federales.png" alt="Tarifa Social Federal"
+					class="sistema-sube-servicios__icon" />
+				<div class="sistema-sube-servicios__content">
+					<span class="sistema-sube-servicios__label">Tarifa Social Federal</span>
+					<p class="sistema-sube-servicios__description">Descuento del 55% en tus viajes</p>
+				</div>
+			</a>
+			<a class="sistema-sube-servicios__card">
+				<img src="/images/Red Sube.png" alt="Red SUBE" class="sistema-sube-servicios__icon" />
+				<div class="sistema-sube-servicios__content">
+					<span class="sistema-sube-servicios__label">Red SUBE</span>
+					<p class="sistema-sube-servicios__description">Combina distintos medios de transporte del AMBA y
+						viaja con
+						descuentos</p>
+				</div>
+			</a>
+			<a class="sistema-sube-servicios__card">
+				<img src="/images/Puntos sube.png" alt="Puntos SUBE" class="sistema-sube-servicios__icon" />
+				<div class="sistema-sube-servicios__content">
+					<span class="sistema-sube-servicios__label">Puntos SUBE</span>
+					<p class="sistema-sube-servicios__description">Encontra puntos de carga, centros de atencion y
+						terminales
+						automaticas cercanas</p>
+				</div>
+			</a>
+			<a class="sistema-sube-servicios__card">
+				<img src="/images/Sube en tu celular.png" alt="SUBE en tu celular"
+					class="sistema-sube-servicios__icon" />
+				<div class="sistema-sube-servicios__content">
+					<span class="sistema-sube-servicios__label">SUBE en tu celular</span>
+					<p class="sistema-sube-servicios__description">Conoce todas nuestras apps</p>
+				</div>
+			</a>
+			<a class="sistema-sube-servicios__card">
+				<img src="/images/Carga empresas.png" alt="Cargas Empresas" class="sistema-sube-servicios__icon" />
+				<div class="sistema-sube-servicios__content">
+					<span class="sistema-sube-servicios__label">Cargas Empresas</span>
+					<p class="sistema-sube-servicios__description">Suma sube a tu empresa u oficina</p>
+				</div>
+			</a>
+			<a class="sistema-sube-servicios__card">
+				<img src="/images/Sube en tu comercio.png" alt="SUBE en tu comercio"
+					class="sistema-sube-servicios__icon" />
+				<div class="sistema-sube-servicios__content">
+					<span class="sistema-sube-servicios__label">SUBE en tu comercio</span>
+					<p class="sistema-sube-servicios__description">¿Queres cargar o vender la tarjeta?</p>
+				</div>
+			</a>
+		</div>
+
+	</section>
+
+	<div th:replace="fragments/footer :: footer"></div>
+</body>
+
+</html>

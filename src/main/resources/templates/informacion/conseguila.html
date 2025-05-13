@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/head :: commonHead('Conseguila')}"></head>
+
+<body>
+	<div th:replace="fragments/navbar :: navbar"></div>
+
+	<section th:fragment="conseguilaForm" class="conseguila-form">
+		<div class="conseguila-form__intro conseguila-form__intro--highlight">
+			<h2 class="conseguila-form__title">Conseguí y cargá tu SUBE</h2>
+			<p class="conseguila-form__subtitle">
+				Podés hacerlo de forma electrónica o presencial.
+			</p>
+		</div>
+
+		<div class="conseguila-form__share">
+			<div class="conseguila-form__share-buttons">
+				<span class="conseguila-form__share-label">Compartir en redes sociales</span>
+				<a href="#" class="conseguila-form__share-btn">
+					<img src="/images/facebook.png" alt="Facebook" class="conseguila-form__share-icon" />
+				</a>
+				<a href="#" class="conseguila-form__share-btn">
+					<img src="/images/x.png" alt="Twitter" class="conseguila-form__share-icon" />
+				</a>
+				<a href="#" class="conseguila-form__share-btn">
+					<img src="/images/linkedin.png" alt="LinkedIn" class="conseguila-form__share-icon" />
+				</a>
+				<a href="#" class="conseguila-form__share-btn">
+					<img src="/images/whatsapp.png" alt="WhatsApp" class="conseguila-form__share-icon" />
+				</a>
+				<a href="#" class="conseguila-form__share-btn">
+					<img src="/images/telegram.png" alt="Telegram" class="conseguila-form__share-icon" />
+				</a>
+			</div>
+		</div>
+
+
+		<ol class="conseguila-form__steps">
+			<li class="conseguila-form__step">
+				<h3 class="conseguila-form__step-title">Conseguí tu SUBE</h3>
+				<ul class="conseguila-form__sublist">
+					<li>En un Punto SUBE</li>
+					<li>A través de una compra online</li>
+				</ul>
+			</li>
+			<li class="conseguila-form__step">
+				<h3 class="conseguila-form__step-title">Cargala</h3>
+				<ul class="conseguila-form__sublist">
+					<li>A través de la app SUBE, homebanking o billeteras electrónicas</li>
+					<li>De forma presencial en un Centro de Atención o Punto SUBE</li>
+				</ul>
+			</li>
+			<li class="conseguila-form__step">
+				<h3 class="conseguila-form__step-title">Acreditá</h3>
+				<ul class="conseguila-form__sublist">
+					<li>En una Terminal Automática (máximo $9.900 acumulados)</li>
+					<li>Desde la app SUBE podés acreditar hasta $40.000</li>
+					<li>En la validadora de colectivos con Carga a Bordo</li>
+				</ul>
+			</li>
+		</ol>
+
+		<p class="conseguila-form__footer">
+			¡Listo! Ya podés usar tu tarjeta en colectivos, trenes y subtes de las 61 localidades que viajan con SUBE.
+		</p>
+	</section>
+
+
+	<div th:replace="fragments/footer :: footer"></div>
+</body>
+
+</html>

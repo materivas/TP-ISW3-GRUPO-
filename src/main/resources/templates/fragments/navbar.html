@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+	<header th:fragment="navbar">
+		<nav class="navbar">
+			<a href="/" class="logo-with-image">
+			  <img src="/images/Argentina.png" alt="Argentina.gob.ar logo" class="logo-with-image__img" />
+			</a>
+			<ul class="nav-links">
+				<form th:action="@{/buscar}" method="get" class="navbar-search">
+					<input type="text" name="q" placeholder="Buscar..." class="search-input" />
+					<button type="submit" class="search-btn">🔍</button>
+				</form>
+			</ul>
+		</nav>
+	</header>
+</body>
+
+</html>

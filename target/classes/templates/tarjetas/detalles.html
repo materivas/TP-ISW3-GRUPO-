@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/head :: commonHead('Tarjetas Detalles')}"></head>
+
+<body>
+	<div th:replace="fragments/navbar :: navbar"></div>
+
+	<div>
+		<h2 th:text="${tarjeta.codigo}">Código</h2>
+		<p>Saldo: <span th:text="${tarjeta.saldo}" /></p>
+		<p>Emitida: <span th:text="${tarjeta.fechaEmision}" /></p>
+	</div>
+
+	<div th:replace="fragments/footer :: footer"></div>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/head :: commonHead('Recargas Lista')}"></head>
+
+<body>
+	<div th:replace="fragments/navbar :: navbar"></div>
+	
+	<ul>
+	    <li th:each="recarga : ${recargas}" th:text="${recarga.monto}"></li>
+	</ul>
+
+	
+	<div th:replace="fragments/footer :: footer"></div>
+</body>
+
+</html>

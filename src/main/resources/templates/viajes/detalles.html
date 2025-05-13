@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/head :: commonHead('Viajes Detalles')}"></head>
+
+<body>
+	<div th:replace="fragments/navbar :: navbar"></div>
+
+	<div>
+		<h2>Viaje <span th:text="${viaje.id}" /></h2>
+		<p>Fecha: <span th:text="${viaje.fechaHora}" /></p>
+		<p>Tarjeta: <span th:text="${viaje.tarjeta.codigo}" /></p>
+		<p>Origen: <span th:text="${viaje.estacionOrigen.nombre}" /></p>
+		<p>Destino: <span th:text="${viaje.estacionDestino.nombre}" /></p>
+	</div>
+
+	<div th:replace="fragments/footer :: footer"></div>
+</body>
+
+</html>

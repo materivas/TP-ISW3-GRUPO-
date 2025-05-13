@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/head :: commonHead('Recargas Formulario')}"></head>
+
+<body>
+	<div th:replace="fragments/navbar :: navbar"></div>
+
+	<section class="recarga-form">
+		<h2 class="recarga-form__title">Recargar SUBE</h2>
+		<form th:action="@{/recargas}" th:object="${recargaFormDTO}" method="post">
+			<div class="recarga-form__field">
+				<input type="number" th:field="*{monto}" placeholder="Monto de la recarga" class="recarga-form__input"
+					required />
+			</div>
+			<div class="recarga-form__field">
+				<input type="text" th:field="*{codigo}" placeholder="codigo" class="recarga-form__input" required />
+			</div>
+			<div class="recarga-form__actions">
+				<button type="submit" class="recarga-form__button">Guardar</button>
+			</div>
+		</form>
+	</section>
+	</form>
+
+	<div th:replace="fragments/contacto :: contacto"></div>
+
+	<div th:replace="fragments/footer :: footer"></div>
+</body>
+
+</html>

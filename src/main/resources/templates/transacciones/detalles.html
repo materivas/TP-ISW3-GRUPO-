@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/head :: commonHead('Transacciones Detalles')}"></head>
+
+<body>
+	<div th:replace="fragments/navbar :: navbar"></div>
+
+	<div>
+		<h2>Transacción <span th:text="${transaccion.id}" /></h2>
+		<p>Tipo: <span th:text="${transaccion.tipo}" /></p>
+		<p>Importe: <span th:text="${transaccion.importe}" /></p>
+	</div>
+
+	<div th:replace="fragments/footer :: footer"></div>
+</body>
+
+</html>

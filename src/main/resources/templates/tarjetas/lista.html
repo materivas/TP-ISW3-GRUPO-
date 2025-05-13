@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/head :: commonHead('Tarjetas Lista')}"></head>
+
+<body>
+	<div th:replace="fragments/navbar :: navbar"></div>
+
+	<ul>
+	    <li th:each="tarjeta : ${tarjetas}" th:text="${tarjeta.numero}"></li>
+	</ul>
+
+	<div th:replace="fragments/footer :: footer"></div>
+</body>
+
+</html>

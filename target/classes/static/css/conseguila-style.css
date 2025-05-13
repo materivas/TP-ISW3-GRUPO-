@@ -1,0 +1,125 @@
+.conseguila-form__intro {
+  text-align: center;
+}
+
+.conseguila-form__intro--highlight {
+	padding: 20px;
+	border-radius: 8px;
+	margin-bottom: 30px;
+}
+
+.conseguila-form {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+}
+
+
+.conseguila-form__share {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.conseguila-form__share-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #00528c;
+}
+
+
+.conseguila-form__share-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+
+.conseguila-form__share-btn {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.conseguila-form__share-icon {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.2s;
+}
+
+.conseguila-form__share-btn:hover .conseguila-form__share-icon {
+  transform: scale(1.1);
+}
+
+
+.conseguila-form__steps {
+	counter-reset: step;
+	margin: 0 auto 30px;
+	padding: 0;
+	list-style: none;
+	text-align: left;
+}
+
+
+.conseguila-form__step {
+	margin: 40px 0;
+}
+
+
+.conseguila-form__step-title {
+	counter-increment: step;
+	position: relative;
+	padding-left: 40px;
+	font-size: 1.1rem;
+	font-weight: 600;
+	color: #00528c;
+	margin-bottom: 8px;
+}
+
+.conseguila-form__step-title::before {
+	content: counter(step);
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #ffc800;
+	color: #00528c;
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	border-radius: 50%;
+	font-weight: bold;
+}
+
+
+.conseguila-form__sublist {
+	margin: 0 0 0 40px;
+	padding: 0;
+	list-style-type: disc;
+}
+
+.conseguila-form__sublist li {
+	margin-bottom: 6px;
+	color: #333;
+	font-size: 0.95rem;
+	line-height: 1.4;
+}
+
+
+.conseguila-form__subtitle {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.conseguila-form__steps {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.conseguila-form__footer {
+	margin: 40px 0;
+}

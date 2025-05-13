@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/head :: commonHead('Usuarios Formulario')}"></head>
+
+<body>
+	<div th:replace="fragments/navbar :: navbar"></div>
+
+	<form th:action="@{/usuarios}" th:object="${usuario}" method="post" class="user-form">
+		<label class="user-form__field">
+			<span class="user-form__label">Nombre:</span>
+			<input th:field="*{nombre}" class="user-form__input" />
+		</label>
+		<label class="user-form__field">
+			<span class="user-form__label">Apellido:</span>
+			<input th:field="*{apellido}" class="user-form__input" />
+		</label>
+		<label class="user-form__field">
+			<span class="user-form__label">Email:</span>
+			<input th:field="*{email}" class="user-form__input" />
+		</label>
+		<button type="submit" class="user-form__button">Guardar</button>
+	</form>
+
+
+	<div th:replace="fragments/footer :: footer"></div>
+</body>
+
+</html>

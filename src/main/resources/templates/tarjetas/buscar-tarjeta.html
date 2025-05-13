@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/head :: commonHead('Iniciar Sesión')}"></head>
+
+<body>
+	<div th:replace="fragments/navbar :: navbar"></div>
+
+	<section class="detalle-tarjeta">
+		<h2 class="detalle-tarjeta__title">Detalle de la tarjeta</h2>
+		<div th:if="${tarjeta != null}" class="detalle-tarjeta__info">
+			<p><strong>Código:</strong> <span th:text="${tarjeta.codigo}"></span></p>
+			<p><strong>Fecha de emisión:</strong>
+				<span th:text="${#temporals.format(tarjeta.fechaEmision, 'dd/MM/yyyy HH:mm')}"></span>
+			</p>
+			<p><strong>Saldo:</strong> $<span th:text="${tarjeta.saldo}"></span></p>
+			<p><strong>Nombre Usuario:</strong> <span th:text="${tarjeta.usuario.nombre}"></span></p>
+			<p><strong>Apellido Usuario:</strong> <span th:text="${tarjeta.usuario.apellido}"></span></p>
+			<p><strong>Tipo Dni Usuario:</strong> <span th:text="${tarjeta.usuario.tipoDni}"></span></p>
+			<p><strong>DNI Usuario:</strong> <span th:text="${tarjeta.usuario.dni}"></span></p>
+			<p><strong>Telefono Usuario:</strong> <span th:text="${tarjeta.usuario.telefono}"></span></p>
+			<p><strong>Genero Usuario:</strong> <span th:text="${tarjeta.usuario.genero}"></span></p>
+		</div>
+		<div th:if="${tarjeta == null}" class="detalle-tarjeta__not-found">
+			<p>No se encontró ninguna tarjeta con ese código.</p>
+			<a th:href="@{/tarjetas/buscar}" class="detalle-tarjeta__back">Volver a búsqueda</a>
+		</div>
+	</section>
+
+	<div th:replace="fragments/footer :: footer"></div>
+</body>
+
+</html>

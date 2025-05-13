@@ -1,0 +1,212 @@
+.tarjeta-form {
+	max-width: 360px;
+	margin: 40px auto;
+	padding: 20px;
+	background: #fafafa;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+}
+
+.tarjeta-form__field {
+	margin-bottom: 16px;
+}
+
+.tarjeta-form__input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.tarjeta-form__actions {
+	text-align: right;
+}
+
+.tarjeta-form__button {
+	padding: 10px 20px;
+	background: #00528c;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.tarjeta-form__button:hover {
+	background: #007bb5;
+}
+
+
+
+/* ----------------------------
+   Sección búsqueda por código
+   ---------------------------- */
+.buscar-form {
+	max-width: 480px;
+	margin: 60px auto;
+	padding: 20px;
+	background: #fafafa;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.buscar-form__title {
+	font-size: 1.5rem;
+	color: #00528c;
+	margin-bottom: 16px;
+}
+
+.buscar-form__form {
+	display: flex;
+	gap: 8px;
+	justify-content: center;
+}
+
+.buscar-form__input {
+	flex: 1;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.buscar-form__button {
+	padding: 10px 16px;
+	background: #00528c;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background 0.3s;
+}
+
+.buscar-form__button:hover {
+	background: #007bb5;
+}
+
+/* -------------------------
+   Sección búsqueda por DNI
+   ------------------------- */
+.buscar-dni-form {
+	max-width: 480px;
+	margin: 60px auto;
+	padding: 20px;
+	background: #f0f8ff;
+	border: 1px solid #cce7ff;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.buscar-dni-form__title {
+	font-size: 1.4rem;
+	color: #004080;
+	margin-bottom: 14px;
+}
+
+.buscar-dni-form__form {
+	display: flex;
+	gap: 8px;
+	justify-content: center;
+}
+
+.buscar-dni-form__input {
+	flex: 1;
+	padding: 10px;
+	border: 1px solid #99c2ff;
+	border-radius: 4px;
+}
+
+.buscar-dni-form__button {
+	padding: 10px 16px;
+	background: #004080;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background 0.3s;
+}
+
+.buscar-dni-form__button:hover {
+	background: #0055a5;
+}
+
+/* -------------------------------
+   Banner atención telefónica SUBE
+   ------------------------------- */
+.sube-evolucion-banner {
+	background: linear-gradient(135deg, #00528c 0%, #009fe3 100%);
+	padding: 30px 0;
+}
+
+.sube-evolucion-banner__container {
+	max-width: 600px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	color: #fff;
+}
+
+.sube-evolucion-banner__icon {
+	width: 50px;
+	height: auto;
+}
+
+.sube-evolucion-banner__text {
+	text-align: left;
+}
+
+.sube-evolucion-banner__line1 {
+	font-size: 1.25rem;
+	font-weight: 700;
+	margin: 0;
+}
+
+.sube-evolucion-banner__line2 {
+	font-size: 1rem;
+	margin: 4px 0 0;
+}
+
+
+/* -------------------------------
+   Detalle de la tarjeta
+   ------------------------------- */
+.detalle-tarjeta {
+	max-width: 600px;
+	margin: 60px auto;
+	padding: 20px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+}
+
+.detalle-tarjeta__title {
+	font-size: 1.5rem;
+	color: #00528c;
+	margin-bottom: 16px;
+	text-align: center;
+}
+
+.detalle-tarjeta__info p {
+	margin: 32px 0;
+	font-size: 1rem;
+}
+
+.detalle-tarjeta__not-found {
+	text-align: center;
+	color: #d9534f;
+	margin-bottom: 16px;
+}
+
+.detalle-tarjeta__back {
+	display: inline-block;
+	padding: 8px 14px;
+	background: #ffc800;
+	color: #00528c;
+	text-decoration: none;
+	border-radius: 4px;
+	transition: background 0.3s;
+}
+
+.detalle-tarjeta__back:hover {
+	background: #ffdd4d;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/head :: commonHead('Tarjetas Buscar Tarjeta')}"></head>
+
+<body>
+	<div th:replace="fragments/navbar :: navbar"></div>
+
+	<!-- Sección: buscar por código -->
+	<section class="buscar-form">
+		<h2 class="buscar-form__title">Buscar tarjeta SUBE</h2>
+		<form th:action="@{/tarjetas/buscar-tarjeta}" method="get" class="buscar-form__form">
+			<input type="text" name="codigo" placeholder="Ingrese el código de la tarjeta" class="buscar-form__input"
+				required />
+			<button type="submit" class="buscar-form__button">Buscar</button>
+		</form>
+	</section>
+
+	<!-- Sección: buscar por DNI -->
+	<section class="buscar-dni-form">
+		<h2 class="buscar-dni-form__title">Buscar por DNI</h2>
+		<form th:action="@{/tarjetas/buscar-dni}" method="get" class="buscar-dni-form__form">
+			<input type="text" name="dni" placeholder="Ingrese el DNI del titular" class="buscar-dni-form__input"
+				required />
+			<button type="submit" class="buscar-dni-form__button">Buscar</button>
+		</form>
+	</section>
+
+	<!-- Banner atención telefónica -->
+	<div th:replace="fragments/contacto :: contacto"></div>
+
+	<div th:replace="fragments/footer :: footer"></div>
+</body>
+
+</html>

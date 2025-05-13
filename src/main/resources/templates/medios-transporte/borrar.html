@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/head :: commonHead('Medios Transporte Borrar')}"></head>
+
+<body>
+	<div th:replace="fragments/navbar :: navbar"></div>
+	
+	<form th:action="@{/medios/{id}(id=${medio.id})}" method="post">
+	  <input type="hidden" name="_method" value="delete"/>
+	  <p>¿Eliminar medio <span th:text="${medio.tipo}"/>?</p>
+	  <button type="submit">Eliminar</button>
+	</form>
+	
+	<div th:replace="fragments/footer :: footer"></div>
+</body>
+
+</html>

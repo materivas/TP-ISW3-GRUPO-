@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/head :: commonHead('Medios Transporte Formulario')}"></head>
+
+<body>
+	<div th:replace="fragments/navbar :: navbar"></div>
+	
+	<form th:action="@{/medios-transporte}" th:object="${medioTransporte}" method="post">
+	    <input type="text" th:field="*{nombre}" placeholder="Nombre del medio de transporte"/>
+	    <button type="submit">Guardar</button>
+	</form>
+	
+	<div th:replace="fragments/footer :: footer"></div>
+</body>
+
+</html>
